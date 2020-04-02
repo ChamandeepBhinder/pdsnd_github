@@ -125,7 +125,7 @@ def station_stats(df):
     print("The most commonly used start and end stations: ")
     print(popular_startandend_stations)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nTotal time: %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
