@@ -17,3 +17,5 @@ Include the files used - Randomly selected data for all three cities in .csv for
 This project was done as part of Udacity's course - Programming for Data Science with Python. Starter code, instructions and datasets were provided by Udacity.
 For this project, I fork a repository for the following Github repository
 https://github.com/udacity/pdsnd_github
+@Udacity
+Git commit message style - https://udacity.github.io/git-styleguide/
