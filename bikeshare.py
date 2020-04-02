@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -39,7 +40,7 @@ day = input("Please choose one of the following day of week: monday, tuesday, we
 while day not in ["monday", "tuesday", "wednesday", "thursday", "friday", "all"]:
     print("You did not type the correct name, please try it again:\n")
     day = input("Please choose one of the following day of week: monday, tuesday, wednesday, thursday, friday, all:\n").lower()
-    
+
 
 
     print('-'*40)
@@ -67,7 +68,7 @@ if month != 'all':
             df = df[df['month'] == month]
 if day != 'all':
           df = df[df['day_of_week'] == day.title()]
-         
+
 
 return df
 
@@ -84,15 +85,15 @@ def time_stats(df):
     popular_month = df['month'].mode()
     print("The most common month: ")
     print(popular_month)
-    
+
 
     # TO DO: display the most common day of week
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     popular_day_of_week = df['day_of_week'].mode()
     print("The most common day of week: ")
     print(popular_day_of_week)
-    
-    
+
+
 
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
@@ -168,37 +169,37 @@ def user_stats(df):
         print(gender)
     except:
         print("There is no gender information available in this city")
-        
-        
+
+
 
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
             earliest_birth = min(df['Birth Year'])
             print("Earliest year of birth: ")
             print(earliest_birth)
-            
-            most_recent_birth = max(df['Birth Year']) 
+
+            most_recent_birth = max(df['Birth Year'])
             print("Most recent year of birth: ")
             print(most_recent_birth)
-            
+
             most_common_birth = df['Birth Year'].mode()
             print(" Most common year of birth: ")
             print(most_common_birth)
-            
-    except: 
+
+    except:
             print("There is no birth year information available in this city")
-            
+
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-     
+
     raw_data = input(" Would you like to see some raw data? Enter yes or no.\n").lower()
     n = 0
     while raw_data == 'yes':
         print(df[n:n+5])
         n += 5
     raw_data = input(" Would you like to see some raw data? Enter yes or no.\n").lower()
-       
+
 
 def main():
     while True:
@@ -220,7 +221,3 @@ if __name__ == "__main__":
 
 
 # In[ ]:
-
-
-
-
