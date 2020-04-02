@@ -10,7 +10,8 @@ In this project, Python is used to explore data related to bike share systems fo
 
 ### Files used
 Include the files used - Randomly selected data for all three cities in .csv format(chicago.csv, new_york_city.csv, washington.csv). all three of data files contain the same core eight columns: start time, end time, trip duration, start station, end station, user type, gender, birth year.
-Bikeshare.py file - project completed in the previous python lesson
+# Bikeshare.py file - project completed in the previous python lesson
+# Libraries used - time, pandas, numpy and datetime.
 
 ### Credits
 This project was done as part of Udacity's course - Programming for Data Science with Python. Starter code, instructions and datasets were provided by Udacity.
